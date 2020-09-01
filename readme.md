@@ -64,7 +64,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/formula 1 home.png) ![](images/Formula 1 standings)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/formula 1 home.png) ![](images/Formula 1 standings.png)
 
 **Breakdown-schets(en):**
 
@@ -76,3 +76,5 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ![](images/Formula 1 Secties-5.jpg)
 ![](images/Formula 1 Secties-6.jpg)
 ![](images/Formula 1 Secties-7.jpg)
+
+![formula 1](images/Formula 1 Secties-1.jpg)
