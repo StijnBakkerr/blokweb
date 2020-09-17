@@ -64,17 +64,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/formula 1 home.png) ![](images/Formula 1 standings.png)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/formula1-home.png "home') ![](images/Formula1-standings.png "standings")
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
 ![Sectie 1](images/Formula1Secties-1.jpg "sectie 1")
-![](images/Formula 1 Secties-2.jpg)
-![](images/Formula 1 Secties-3.jpg)
-![](images/Formula 1 Secties-4.jpg)
-![](images/Formula 1 Secties-5.jpg)
-![](images/Formula 1 Secties-6.jpg)
-![](images/Formula 1 Secties-7.jpg)
+![](images/Formula1-Secties-2.jpg "sectie 2")
+![](images/Formula1-Secties-3.jpg "sectie 3")
+![](images/Formula1-Secties-4.jpg "sectie 4")
+![](images/Formula1-Secties-5.jpg "sectie 5")
+![](images/Formula1-Secties-6.jpg "sectie 6")
+![](images/Formula1-Secties-7.jpg "sectie 7")
 
-![formula 1](images/Formula 1 Secties-1.jpg)
