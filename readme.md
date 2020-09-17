@@ -46,7 +46,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+#### Agendapunten:
+
+⋅⋅* Hoe kan je een border een bepaalde breedte meegeven?
+⋅⋅* flexbox buttons 
+⋅⋅* flex box
+⋅⋅* Button in section
+⋅⋅* Wat als jusify-content niet werkt?
+⋅⋅* instagram in je html
+⋅⋅* border-left niet doorlaten lopen
 
 ### Verslag van meeting
 
