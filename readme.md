@@ -44,9 +44,9 @@ Dit ging minder goed: positioneren en het vinden van fouten en oplossen.
 
 **Screenshot(s):**
 
-*[voortgang 1](images/voortgang1.jpg "voortgangs moment 1")
-*[Het centreren van het element is niet gelukt](images/button-niet-gecentreerd.png "mindergoed")
-*[Het centreren van het element is niet gelukt](images/nietgecentreerd.png "mindergoed")
+![voortgang 1](images/voortgang1.jpg "voortgangs moment 1")
+![Het centreren van het element is niet gelukt](images/button-niet-gecentreerd.png "mindergoed")
+![Het centreren van het element is niet gelukt](images/nietgecentreerd.png "mindergoed")
 
 ### Agenda voor meeting
 
