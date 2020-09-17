@@ -10,17 +10,23 @@ body {
     font-size: 17px;
     line-height: 23px;
     letter-spacing: .2px;
+    width: 100%;
 }
+
 
 header ul {
     display: flex;
     position: fixed;
+    top: -17px;
+    left: 0;
+    right: 0;
     justify-content: space-between;
     align-items: center;
     background: #e10600;
     width: 100%;
     height: auto;
     z-index: 999;
+    width: 100vw;
 }
 
 header img {
@@ -29,8 +35,8 @@ header img {
 }
 
 main {
-    padding-left: 10px;
-    padding-right: 10px;
+
+    width: 100%;
 }
 
 ul li {
@@ -88,7 +94,7 @@ main section fieldset ul:first-of-type li {
     padding: 15px 15px 30px;
     margin-bottom: 20px;
     float: left;
-    width: 47%;
+    width: 45%;
     padding: 10px;
     margin-right: 10px;
 }
@@ -108,6 +114,12 @@ fieldset button {
     border: none;
 }
 
+fieldset button:hover {
+    box-shadow: 0 0 0 2px #e10600 inset;
+    background: #fff;
+    transition: all .5s
+}
+
 fieldset button a {
     color: white;
     font-size: 13px;
@@ -116,6 +128,11 @@ fieldset button a {
     font-family: "Titillium Web";
     font-weight: 600;
     text-transform: uppercase;
+}
+
+fieldset button a:hover {
+    color: #15151e;
+    transition: all .5s
 }
 
 section:nth-child(2) {
@@ -201,10 +218,9 @@ section:nth-child(2) div:nth-child(4) img:last-child {
 section:nth-child(2) button {
     appearance: none;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #d0d0d2;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all .5s cubic-bezier(.2, 0, .05, 1);
     font-family: "Titillium Web";
     font-size: 13px;
     line-height: 15px;
@@ -213,11 +229,15 @@ section:nth-child(2) button {
     padding: 10px 0;
     display: block;
     text-align: center;
-    box-shadow: 0 0 0 1px #d0d0d2 inset;
     background: 0 0;
     color: #fff;
     width: 90%;
     margin-bottom: 1em;
+}
+
+section:nth-child(2) button:hover {
+    border: 2px solid #d0d0d2;
+    transition: all .5s;
 }
 
 section:nth-child(2) ul li {
@@ -265,6 +285,11 @@ time {
 
 section:nth-child(3) {
     text-transform: uppercase;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 section:nth-child(3) ul:nth-child(1) {
@@ -300,10 +325,12 @@ section:nth-child(3) ul:nth-child(1) li:first-child {
     bottom: 0px;
 }
 
-section:nth-child(3) div{
+section:nth-child(3) div {
     display: flex;
     flex-direction: column;
     background-color: #494757;
+    position: relative;
+    height: 300px;
 }
 
 section:nth-child(3) div h3 {
@@ -314,4 +341,89 @@ section:nth-child(3) div h3 {
     font-size: 20px;
     line-height: 24px;
     color: white;
+}
+
+section:nth-child(3) div img {
+    width: 60%;
+    z-index: 900;
+    position: absolute;
+    bottom: -10px;
+    right: 50px;
+}
+
+section:nth-child(3) div div {
+    background-color: white;
+    width: 90%;
+    border-radius: 15px 15px 0 0;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 10px solid #00D2BE;
+}
+
+section:nth-child(3) ul:nth-child(3) {
+    width: 90%;
+    margin: -0.1em;
+    /*   display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+section:nth-child(3) ul:nth-child(3) li {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    font-family: "Formula1 Display-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    margin: 2px;
+    background-color: white;
+}
+
+section:nth-child(3) ul:nth-child(3) li span {
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+}
+
+section:nth-child(3) ul:nth-child(3) li span:nth-child(3) {
+    font-family: "Titillium Web";
+    font-weight: 600;
+    background-color: #ededed;
+    font-size: 13px;
+    padding: 2px 10px;
+    border-radius: 15px;
+    position: absolute;
+    right: 2em;
+}
+
+section:nth-child(3) ul:nth-child(3) li p {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-left: 4px solid #00d2Be;
+}
+
+section:nth-child(3) button {
+    background: #e10600;
+    box-shadow: none;
+    color: #fff;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: .5px;
+    font-weight: 600;
+    padding: 12px 35px 12px 15px;
+}
+
+section:nth-child(3) button:hover {
+    box-shadow: 0 0 0 2px #e10600 inset;
+    background: #fff;
+    color: #15151e;
+    transition: all .5s
 }
