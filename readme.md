@@ -69,7 +69,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Breakdown-schets(en):**
 
 ![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
-![](images/Formula-1-Secties-1.jpg)
+![-Sectie 1-](images/Formula-1-Secties-1.jpg)
 ![](images/Formula 1 Secties-2.jpg)
 ![](images/Formula 1 Secties-3.jpg)
 ![](images/Formula 1 Secties-4.jpg)
