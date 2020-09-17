@@ -38,11 +38,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Dit ging goed: selectoren en styling
+
+Dit ging minder goed: positioneren en het vinden van fouten en oplossen.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+*[voortgang 1](images/voortgang1.jpg "voortgangs moment 1")
+*[Het centreren van het element is niet gelukt](images/button-niet-gecentreerd.png "mindergoed")
+*[Het centreren van het element is niet gelukt](images/nietgecentreerd.png "mindergoed")
 
 ### Agenda voor meeting
 
