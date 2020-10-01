@@ -63,6 +63,8 @@ main section fieldset {
     border-bottom: 0px;
     border-top-right-radius: 30px;
     border-top-width: ;
+    margin-top: 100px;
+    padding-left: 0;
 }
 
 main section fieldset legend h1 {
@@ -97,6 +99,8 @@ main section fieldset ul:first-of-type li {
     width: 45%;
     padding: 10px;
     margin-right: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 main section fieldset ul:first-of-type:after {
@@ -112,6 +116,7 @@ fieldset button {
     padding: 12px 15px 12px 15px;
     border-radius: 5px;
     border: none;
+    margin: auto;
 }
 
 fieldset button:hover {
@@ -178,7 +183,7 @@ section:nth-child(2) div:nth-child(4) {
     background-color: #093a2b;
     display: flex;
     justify-content: flex-start;
-    padding: 1em;
+    padding: .5em;
     max-width: 95%;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -331,6 +336,8 @@ section:nth-child(3) div {
     background-color: #494757;
     position: relative;
     height: 300px;
+    width: 100%;
+    margin: auto;
 }
 
 section:nth-child(3) div h3 {
@@ -359,11 +366,14 @@ section:nth-child(3) div div {
     position: absolute;
     bottom: 0px;
     border-bottom: 10px solid #00D2BE;
+    margin: auto;
+    padding:
 }
 
 section:nth-child(3) ul:nth-child(3) {
     width: 90%;
     margin: -0.1em;
+    margin: auto;
     /*   display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -410,7 +420,6 @@ section:nth-child(3) button {
     background: #e10600;
     box-shadow: none;
     color: #fff;
-    margin: 10px 0 20px 0;
     border-radius: 5px;
     text-transform: uppercase;
     border: none;
@@ -419,6 +428,9 @@ section:nth-child(3) button {
     letter-spacing: .5px;
     font-weight: 600;
     padding: 12px 35px 12px 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
 }
 
 section:nth-child(3) button:hover {
@@ -426,4 +438,36 @@ section:nth-child(3) button:hover {
     background: #fff;
     color: #15151e;
     transition: all .5s
+}
+
+section:nth-child(4) div {
+    margin: 1em;
+}
+
+section:nth-child(4) div article {
+
+}
+
+section:nth-child(4) div article div {
+    position: relative;
+    display: flex;
+}
+
+section:nth-child(4) div article img {
+        border-radius: 10px;
+}
+
+section:nth-child(4) div article div h3 {
+    position: absolute;
+    margin: 0;
+    top: 20%;
+    color: white;
+    font-family: "Formula1 Display-Bold";
+    font-size: 20px;
+    line-height: 24px;
+}
+
+section:nth-child(4) div article div button {
+    position: absolute;
+    top: 50%;
 }
