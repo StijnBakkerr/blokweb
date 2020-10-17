@@ -5,6 +5,21 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Formula1';
+    src: url('../fonts/Formula-Regular.tff') format('embedded-opentype')
+}
+
+@font-face {
+    font-family: "Formula1 Display-Bold";
+    src: url('../fonts/Formula-Bold.tff') format('embedded-opentype')
+}
+
+@font-face {
+    font-family: "Formula1 Display-Wide";
+    src: url('../fonts/Formula-Wide.tff') format('embedded-opentype')
+}
+
 body {
     font-family: "Titillium Web", sans-serif;
     font-size: 17px;

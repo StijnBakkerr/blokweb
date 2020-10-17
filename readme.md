@@ -6,8 +6,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
+1. https://www.youtube.com/watch?v=YmxDDSasjX8&ab_channel=LevelUpTuts
+2. https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
 3. -...-
 
 
