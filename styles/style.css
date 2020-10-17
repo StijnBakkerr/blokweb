@@ -5,21 +5,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Formula1';
-    src: url('../fonts/Formula-Regular.tff') format('embedded-opentype')
-}
-
-@font-face {
-    font-family: "Formula1 Display-Bold";
-    src: url('../fonts/Formula-Bold.tff') format('embedded-opentype')
-}
-
-@font-face {
-    font-family: "Formula1 Display-Wide";
-    src: url('../fonts/Formula-Wide.tff') format('embedded-opentype')
-}
-
 body {
     font-family: "Titillium Web", sans-serif;
     font-size: 17px;
@@ -90,7 +75,7 @@ main section fieldset legend h1 {
 }
 
 ul li a p {
-    font-family: "Formula1";
+    font-family: "Formula1", "Titillium Web";
 }
 
 a {
@@ -116,6 +101,10 @@ main section fieldset ul:first-of-type li {
     margin-right: 10px;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+main section fieldset ul:first-of-type li:hover{
+    border-color: #e10600;
 }
 
 main section fieldset ul:first-of-type:after {
@@ -356,10 +345,10 @@ section:nth-child(3) div {
 }
 
 section:nth-child(3) div h3 {
+    font-family: "Formula1 Display-Wide";
     display: flex;
     justify-content: center;
     margin: 20px 0 30px 0;
-    font-family: "Formula1 Display-Wide";
     font-size: 20px;
     line-height: 24px;
     color: white;
@@ -380,9 +369,10 @@ section:nth-child(3) div div {
     height: 100px;
     position: absolute;
     bottom: 0px;
+    left: auto;
+    right: 21px;
     border-bottom: 10px solid #00D2BE;
-    margin: auto;
-    padding:
+    
 }
 
 section:nth-child(3) ul:nth-child(3) {
@@ -429,6 +419,38 @@ section:nth-child(3) ul:nth-child(3) li p {
     margin: 0 10px;
     padding: 0 10px;
     border-left: 4px solid #00d2Be;
+}
+
+section:nth-child(3) ul:nth-child(3) li:nth-child(3) p {
+    border-left: 4px solid #0600ef;
+}
+
+section:nth-child(3) ul:nth-child(3) li:nth-child(4) p {
+    border-left: 4px solid #F596C8;
+}
+
+section:nth-child(3) ul:nth-child(3) li:nth-child(5) p {
+    border-left: 4px solid #FF8700;
+}
+
+section:nth-child(3) ul:nth-child(3) li:nth-child(6) p {
+    border-left: 4px solid #0600ef;
+}
+
+section:nth-child(3) ul:nth-child(3) li:nth-child(7) p {
+    border-left: 4px solid #DC0000;
+}
+
+section:nth-child(3) ul:nth-child(3) li:nth-child(8) p {
+    border-left: 4px solid #FFF;
+}
+
+section:nth-child(3) ul:nth-child(3) li:nth-child(9) p {
+    border-left: 4px solid #FF8700;
+}
+
+section:nth-child(3) ul:nth-child(3) li:nth-child(10) p {
+    border-left: 4px solid #FFF500;
 }
 
 section:nth-child(3) button {
