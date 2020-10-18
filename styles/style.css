@@ -565,7 +565,7 @@ section:nth-child(5) fieldset {
 }
 
 section:nth-child(5) article {
-    background-image: url(/images/70%20jaar%20f1.jpg);
+    background-image: url(/images/70jaarf1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -582,7 +582,7 @@ section:nth-child(5) article:nth-child(3) {
 }
 
 section:nth-child(5) article:nth-child(4) {
-    background-image: url(/images/driver%20market.jpg);
+    background-image: url(/images/drivermarket.jpg);
     margin-top: 1em;
 }
 
