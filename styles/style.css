@@ -170,7 +170,7 @@ section:nth-child(2) div:nth-child(1) img {
 section:nth-child(2) div:nth-child(1) span {
     align-items: center;
     align-content: center;
-    font-family: "Formula1 Display-Bold";
+    font-family: "Formula1 Display-Bold", "Titillium Web";
     color: #949498;
     font-size: 13px;
     line-height: 15px;
@@ -179,7 +179,7 @@ section:nth-child(2) div:nth-child(1) span {
 section:nth-child(2) h3 {
     font-size: 1rem;
     line-height: 20px;
-    font-family: "Formula1 Display-Bold";
+    font-family: "Formula1 Display-Bold", "Titillium Web";
     margin: 1em;
 }
 
@@ -208,7 +208,7 @@ section:nth-child(2) div:nth-child(4) container {
 }
 
 section:nth-child(2) div:nth-child(4) container span {
-    font-family: "Formula1 Display-Bold";
+    font-family: "Formula1 Display-Bold", "Titillium Web";
     line-height: 15px;
     letter-spacing: .5px;
     font-weight: 400;
@@ -255,7 +255,7 @@ section:nth-child(2) ul li {
     align-items: center;
     margin-left: 1em;
     margin-right: 1em;
-    font-family: "Formula1";
+    font-family: "Formula1", "Titillium Web";
     font-size: 12px;
     letter-spacing: .5px;
     font-weight: 400;
@@ -307,7 +307,7 @@ section:nth-child(3) ul:nth-child(1) {
     margin: 0 10px;
     padding: 20px 0;
     position: relative;
-    font-family: "Formula1";
+    font-family: "Formula1", "Titillium Web";
     font-size: 14px;
     line-height: 17px;
     background-color: #f3f3f3;
@@ -345,7 +345,7 @@ section:nth-child(3) div {
 }
 
 section:nth-child(3) div h3 {
-    font-family: "Formula1 Display-Wide";
+    font-family: "Formula1 Display-Wide", "Titillium Web";
     display: flex;
     justify-content: center;
     margin: 20px 0 30px 0;
@@ -390,7 +390,7 @@ section:nth-child(3) ul:nth-child(3) li {
     display: flex;
     justify-content: flex-start;
     padding: 15px;
-    font-family: "Formula1 Display-Bold";
+    font-family: "Formula1 Display-Bold", "Titillium Web";
     font-size: 14px;
     line-height: 17px;
     position: relative;
@@ -506,7 +506,7 @@ section:nth-child(4) div article img {
 section:nth-child(4) div article div h3 {
     top: 20%;
     color: white;
-    font-family: "Formula1 Display-Bold";
+    font-family: "Formula1 Display-Bold", "Titillium Web";
     font-size: 20px;
     line-height: 24px;
     letter-spacing: .2px;
@@ -536,7 +536,7 @@ section:nth-child(4) button:hover {
 }
 
 section:nth-child(5) {
-    font-family: "Formula1 Display-Bold";
+    font-family: "Formula1 Display-Bold", "Titillium Web";
     color: white;
     background-color: #38383f;
     border-bottom: solid 2px #000;
@@ -647,7 +647,7 @@ footer {
     color: #fff;
     padding-bottom: 20px;
     margin: 0px;
-    font-family: "Formula1"
+    font-family: "Formula1", "Titillium Web"
 }
 
 footer ul {
@@ -682,13 +682,13 @@ footer h2 {
     text-align: center;
     font-size: 18px;
     line-height: 24px;
-    font-family: "Formula1 Display-Bold";
+    font-family: "Formula1 Display-Bold", "Titillium Web";
 }
 
 main.news-page {}
 
 main.news-page h1 {
-    font-family: "Formula1";
+    font-family: "Formula1", "Titillium Web";
     font-size: 24px;
     line-height: 28px;
     margin-top: 0;
@@ -800,7 +800,7 @@ main.news-page section:nth-child(3) ul li:nth-child(2) {
 
 main.news-page h2 {
     color: #000000;
-    font-family: "Formula1 Display-Wide";
+    font-family: "Formula1 Display-Wide", "Titillium Web";
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 20px;

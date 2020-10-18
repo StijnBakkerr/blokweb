@@ -8,31 +8,60 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. https://www.youtube.com/watch?v=YmxDDSasjX8&ab_channel=LevelUpTuts
 2. https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
-3. -...-
+3. https://www.formula1.com/
+4. https://developer.mozilla.org/nl/
+5. https://www.w3schools.com/
+6. https://css-tricks.com/
+7. https://dlo.mijnhva.nl/d2l/le/content/192602/Home
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Dit ging goed:
+⋅⋅* Opmaak van de tweede pagina ben ik zeer tevreden mee
+⋅⋅* Styling van de homepage was erg uitdagend, erg trots dat ik zover ben gekomen
+⋅⋅* Selectoren gebruiken voor css
+⋅⋅* Hovers inzetten 
+
+Dit was lastig:
+⋅⋅* css selector voor pagina 2
+⋅⋅* Precieze positionering bij schaling 
+⋅⋅* Af en toe heb ik een !important moeten gebruiken...
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
-
-
-
+![Voortgang 2](images/voortgang 2.jpg "voortgang 2")
+![Voortgang 3](images/voortgang 3.jpg "voortgang 3")
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
-
+Niet aanwezig geweest
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Dit ging goed: Feedback verwerken Visuele details uitwerken. 
 
+Dit ging minder goed: Lettertype dat gedownload is, niet in code gekregen.
 
+![Voortgang 2](images/voortgang 2.jpg "voortgang 2")
+
+### Agenda voor meeting
+
+#### Agendapunten:
+
+⋅⋅* Centreren van een element die nergens naar luistert
+⋅⋅* Filteren
+⋅⋅* Navigatie in de header
+⋅⋅* Grid
+⋅⋅* Afbeeldingen
+
+### Verslag van meeting
+
+⋅⋅* Kijk naar hoe je een position absolute moet centeren
+⋅⋅* Schrijf je in voor je eindgesprek
+⋅⋅* 19 okt of 26 okt
+⋅⋅* Dag van te voren om 18:00 inleveren op DLO en Github
 
 ## Voortgang 1 (week 3)
 
@@ -62,7 +91,13 @@ Dit ging minder goed: positioneren en het vinden van fouten en oplossen.
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+⋅⋅* Padding left 0px voor fieldset
+⋅⋅* Articles borderleftreadius selecteren
+⋅⋅* Klok padding div daarboven
+⋅⋅* List onderstreep padding-bottom
+⋅⋅* Hoe centreer je een absolute element
+
+⋅⋅* https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
 
 
 
