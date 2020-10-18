@@ -31,7 +31,7 @@ Dit was lastig:
 
 **Screenshot(s):**
 
-![Voortgang 2](images/voortgang2.jpg "voortgang 2")
+![Voortgang 2](images/Voortgang2.jpg "Voortgang2")
 ![Voortgang 3](images/voortgang3.jpg "voortgang 3")
 ## Voortgang 3 (week 6)
 
@@ -44,7 +44,7 @@ Dit ging goed: Feedback verwerken Visuele details uitwerken.
 
 Dit ging minder goed: Lettertype dat gedownload is, niet in code gekregen.
 
-![Voortgang 2](images/voortgang2.jpg "voortgang 2")
+![Voortgang 2](images/Voortgang2.jpg "Voortgang2")
 
 ### Agenda voor meeting
 
