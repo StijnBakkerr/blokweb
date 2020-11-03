@@ -3,8 +3,11 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
 }
 
+/* Hier staan de basis waarde die bijna overal gelden op de pagina */
 body {
     font-family: "Titillium Web", sans-serif;
     font-size: 17px;
@@ -13,7 +16,9 @@ body {
     width: 100%;
 }
 
+/* Menu balk */
 
+/* Dit gaat om de rode menubalk boven aan de pagina. Positioneerd 3 elementen */
 header ul {
     display: flex;
     position: fixed;
@@ -27,26 +32,131 @@ header ul {
     height: auto;
     z-index: 999;
     width: 100vw;
+    margin: 1em 0em;
 }
 
+/* Menu balk: logo en user */
 header img {
     width: 75px;
     padding: 10px;
 }
 
-main {
-
-    width: 100%;
+header {
+    position: relative;
 }
 
+/*  
+.container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 1em;
+    top: 1em;
+    width: 4em;
+    height: 3em;
+    cursor: pointer;
+}
+*/
+
+/* Menu balk: hamburger menu middelste balk */
+header span {
+    display: block;
+    position: relative;
+    height: .2em;
+    width: 8%;
+    background: white;
+    transition: .3s ease-in-out;
+    margin-left: 1em;
+}
+
+/* Menu balk: hamburger menu boven en onder */
+header span::before,
+header span::after {
+    height: .2em;
+    width: 100%;
+    content: '';
+    background: white;
+    position: absolute;
+}
+
+/* Menu balk: hamburger menu bovenste balk positionering */
+header span::before {
+    top: -1em;
+}
+
+/* Menu balk: hamburger menu bovenste balk positionering */
+header span::after {
+    bottom: -1em;
+}
+
+/* Menu balk: hamburger menu draai */
+span.active::after {
+    Transform: scaleX(0);
+}
+
+/* Menu balk: hamburger menu draai */
+span.active::before {
+    transform: rotate(-90deg) translate(-17px, 0);
+}
+
+/* Menu balk: hamburger menu draai */
+span.active {
+    transform: rotate(-45deg);
+}
+
+/* Menu balk: verborgen menu die achter de knop zit */
+.hiddenmenu {
+    display: none;
+}
+
+.hiddenmenu ul {
+    margin-top: 85px;
+    display: block;
+}
+
+.hiddenmenu ul li {
+    font-size: 15px;
+    font-family: "Formula1";
+    font-weight: 400;
+    letter-spacing: .2px;
+    display: block;
+    padding: 5px 15px;
+    color: #fff;
+    position: relative;
+    line-height: 23px;
+}
+
+.hiddenmenu ul li a {
+    font-weight: 400;
+    display: block;
+    padding: 10px 10px 10px 0;
+    border: solid 1px #f08380;
+    border-top: 0;
+    border-left: 0;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+
+/* Einde menu Balk */
+
+/* Hier staat alle inhoud in */
+main {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+}
+
+/* Sectie 1: Opmaak van de lijst */
 ul li {
     list-style: none;
 }
 
+/* Geeft alle afbeeldingen volle breedte */
 img {
     width: 100%;
 }
 
+/* Sectie 1: Rode kopje boven de tekst */
 li span {
     color: #e10600;
     font-size: 11px;
@@ -56,37 +166,44 @@ li span {
     font-weight: 700;
 }
 
+/* Sectie 1: de nieuws sectie */
 main section:nth-child(1) fieldset {
     border-right: 10px solid #e10600;
     border-top: 10px solid #e10600;
     border-left: 0px;
     border-bottom: 0px;
     border-top-right-radius: 30px;
-    border-top-width: ;
     margin-top: 100px;
     padding-left: 0px;
     margin-right: 10px;
 }
 
+/* Sectie 1: Rand om het lijst item heen */
 main section fieldset legend h1 {
     left: 0px;
     border: 3px solid #FFF;
     padding-right: 30px;
 }
 
+/* Sectie 1: Tekst opmaak van de lijst inhoud */
 ul li a p {
-    font-family: "Formula1", "Titillium Web";
+   font-size: 16px;
+    line-height: 18px;
+    letter-spacing: .2px;
 }
 
+/* Sectie 1: Tekst opmaak van de lijst inhoud */
 a {
     text-decoration: none;
     color: #000000;
 }
 
+/* Sectie 1: Lijst */
 ul {
     padding-left: 0px
 }
 
+/* Sectie 1: Rode border om sectie heen */
 main section fieldset ul:first-of-type li {
     border-bottom: 1px solid;
     border-right: 1px solid;
@@ -101,18 +218,28 @@ main section fieldset ul:first-of-type li {
     margin-right: 10px;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
+    overflow: hidden;
 }
 
-main section fieldset ul:first-of-type li:hover{
+/* Sectie 1: Maakt de rand om lijst element rood bij een hover */
+main section fieldset ul:first-of-type li:hover {
     border-color: #e10600;
 }
 
+/* Sectie 1: Vergroot img in de lijst bij een hover */
+main section fieldset ul:first-of-type li a:hover img {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
+
+/* Sectie 1: Zorgt ervoor dat de list items naast elkaar komen te staan */
 main section fieldset ul:first-of-type:after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* Sectie 1: Button onderaan sectie 1 */
 fieldset button {
     display: flex;
     justify-content: center;
@@ -121,15 +248,6 @@ fieldset button {
     border-radius: 5px;
     border: none;
     margin: auto;
-}
-
-fieldset button:hover {
-    box-shadow: 0 0 0 2px #e10600 inset;
-    background: #fff;
-    transition: all .5s
-}
-
-fieldset button a {
     color: white;
     font-size: 13px;
     line-height: 15px;
@@ -139,11 +257,16 @@ fieldset button a {
     text-transform: uppercase;
 }
 
-fieldset button a:hover {
+/* Sectie 1: Button onderaan sectie 1 met hover */
+fieldset button:hover {
+    box-shadow: 0 0 0 2px #e10600 inset;
+    background: #fff;
     color: #15151e;
-    transition: all .5s
+    transition: all .5s;
 }
 
+
+/* Sectie 2: Italian Gran Prix */
 section:nth-child(2) {
     position: relative;
     display: flex;
@@ -155,18 +278,21 @@ section:nth-child(2) {
     text-transform: uppercase;
 }
 
+/* Sectie 2: Bovenaan: Vlag en land naam */
 section:nth-child(2) div:nth-child(1) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
+/* Sectie 2: Bovenaan: Vlag */
 section:nth-child(2) div:nth-child(1) img {
     width: 2.5em;
     border-radius: 5px;
     margin: 1.5em 1em;
 }
 
+/* Sectie 2: Bovenaan: Land naam */
 section:nth-child(2) div:nth-child(1) span {
     align-items: center;
     align-content: center;
@@ -176,6 +302,7 @@ section:nth-child(2) div:nth-child(1) span {
     line-height: 15px;
 }
 
+/* Sectie 2: Titel Grand Prix */
 section:nth-child(2) h3 {
     font-size: 1rem;
     line-height: 20px;
@@ -183,6 +310,7 @@ section:nth-child(2) h3 {
     margin: 1em;
 }
 
+/* Sectie 2: Klok sectie*/
 section:nth-child(2) div:nth-child(4) {
     background-color: #093a2b;
     display: flex;
@@ -194,12 +322,14 @@ section:nth-child(2) div:nth-child(4) {
     margin-bottom: 1em;
 }
 
+/* Sectie 2: Klok sectie: Klok image */
 section:nth-child(2) div:nth-child(4) img {
-    width: 20%;
+    width: 40%;
     height: auto;
     min-width: 20%;
 }
 
+/* Sectie 2: Klok sectie: Mugello/ your time */
 section:nth-child(2) div:nth-child(4) container {
     display: flex;
     flex-direction: column;
@@ -207,7 +337,8 @@ section:nth-child(2) div:nth-child(4) container {
     justify-content: space-around;
 }
 
-section:nth-child(2) div:nth-child(4) container span {
+/* Sectie 2: Klok sectie: Mugello/ your time */
+section:nth-child(2) div:nth-child(4) div span {
     font-family: "Formula1 Display-Bold", "Titillium Web";
     line-height: 15px;
     letter-spacing: .5px;
@@ -218,14 +349,17 @@ section:nth-child(2) div:nth-child(4) container span {
     margin-left: 1em;
 }
 
+/* Sectie 2: Klok sectie: Rolex logo */
 section:nth-child(2) div:nth-child(4) img:last-child {
-    margin-left: 40%;
+    margin-left: 20%;
+    width: 30%;
+    height: auto;
     border-left: solid 1px rgba(237, 237, 237, .1);
     padding-right: 2px;
 }
 
+/* Sectie 2: 2 middelste buttons */
 section:nth-child(2) button {
-    appearance: none;
     border-radius: 5px;
     border: 1px solid #d0d0d2;
     text-decoration: none;
@@ -241,14 +375,17 @@ section:nth-child(2) button {
     background: 0 0;
     color: #fff;
     width: 90%;
+    margin: auto;
     margin-bottom: 1em;
 }
 
+/* Sectie 2: 2 middelste buttons */
 section:nth-child(2) button:hover {
     border: 2px solid #d0d0d2;
     transition: all .5s;
 }
 
+/* Sectie 2: Onderste gedeelte; dagen en tijden */
 section:nth-child(2) ul li {
     display: flex;
     justify-content: space-around;
@@ -261,12 +398,15 @@ section:nth-child(2) ul li {
     font-weight: 400;
     text-transform: uppercase;
     line-height: 1;
+    margin-bottom: .5em;
 }
 
+/* Sectie 2: Onderste gedeelte; degen en tijden */
 section:nth-child(2) ul {
     padding-bottom: 2em;
 }
 
+/* Sectie 2: Onderste gedeelte; dagen */
 section:nth-child(2) ul li p:nth-child(2) {
     color: #949498;
     font-size: 13px;
@@ -275,6 +415,7 @@ section:nth-child(2) ul li p:nth-child(2) {
     padding: 0 5px;
 }
 
+/* Sectie 2: Onderste gedeelte; tijden */
 section:nth-child(2) ul li p:nth-child(3) {
     background-color: #38383f;
     padding: 4px 10px;
@@ -283,7 +424,8 @@ section:nth-child(2) ul li p:nth-child(3) {
     letter-spacing: .5px;
 }
 
-time {
+/* Sectie 2: Onder te titel; de datum */
+section:nth-child(2) span {
     color: #949498;
     font-size: 13px;
     line-height: 15px;
@@ -292,6 +434,7 @@ time {
     margin: 1em;
 }
 
+/* Sectie 3: drivers championchip */
 section:nth-child(3) {
     text-transform: uppercase;
     background: #f3f3f3;
@@ -301,6 +444,7 @@ section:nth-child(3) {
     width: 100%;
 }
 
+/* Sectie 3: Bovenste gedeelte: drivers/constructors/Last Race */
 section:nth-child(3) ul:nth-child(1) {
     display: flex;
     justify-content: space-around;
@@ -315,6 +459,7 @@ section:nth-child(3) ul:nth-child(1) {
     /* width: 100%; */
 }
 
+/* Sectie 3: Bovenste gedeelte: constructors */
 section:nth-child(3) ul:nth-child(1) li:nth-of-type(2) {
     border-left: 1px solid #d0d0d2;
     border-right: 1px solid #d0d0d2;
@@ -322,18 +467,19 @@ section:nth-child(3) ul:nth-child(1) li:nth-of-type(2) {
     padding: 0 2em;
 }
 
+/* Sectie 3: Bovenste gedeelte: drivers/constructors/Last Race. bij hover -> onderstreep */
 section:nth-child(3) ul:nth-child(1) li:hover {
     border-bottom: 3px solid #e10600;
     bottom: 0px;
-
-
 }
 
+/* Sectie 3: Bovenste gedeelte: Drivers */
 section:nth-child(3) ul:nth-child(1) li:first-child {
     border-bottom: 3px solid #e10600;
     bottom: 0px;
 }
 
+/* Sectie 3: Middelste gedeelte: Lewis + Titel */
 section:nth-child(3) div {
     display: flex;
     flex-direction: column;
@@ -344,6 +490,7 @@ section:nth-child(3) div {
     margin: auto;
 }
 
+/* Sectie 3: Middelste gedeelte: Titel */
 section:nth-child(3) div h3 {
     font-family: "Formula1 Display-Wide", "Titillium Web";
     display: flex;
@@ -354,6 +501,7 @@ section:nth-child(3) div h3 {
     color: white;
 }
 
+/* Sectie 3: Middelste gedeelte: Lewis */
 section:nth-child(3) div img {
     width: 60%;
     z-index: 900;
@@ -362,6 +510,7 @@ section:nth-child(3) div img {
     right: 50px;
 }
 
+/* Sectie 3: Middelste gedeelte: Witte blok bij Lewis */
 section:nth-child(3) div div {
     background-color: white;
     width: 90%;
@@ -372,9 +521,10 @@ section:nth-child(3) div div {
     left: auto;
     right: 21px;
     border-bottom: 10px solid #00D2BE;
-    
+
 }
 
+/* Sectie 3: Onderste gedeelte: Lijst met drivers */
 section:nth-child(3) ul:nth-child(3) {
     width: 90%;
     margin: -0.1em;
@@ -384,6 +534,7 @@ section:nth-child(3) ul:nth-child(3) {
     justify-content: center; */
 }
 
+/* Sectie 3: Onderste gedeelte: Lijst met drivers */
 section:nth-child(3) ul:nth-child(3) li {
     align-items: center;
     border-radius: 5px;
@@ -398,12 +549,24 @@ section:nth-child(3) ul:nth-child(3) li {
     background-color: white;
 }
 
+section:nth-child(3) ul:nth-child(3) li:hover {
+    background-color: #38383f;
+    color: white;
+    transition: .2s ease-in;
+}
+
+/* Sectie 3: Onderste gedeelte: Positie in klassenment en aantal punten */
 section:nth-child(3) ul:nth-child(3) li span {
     font-size: 14px;
     line-height: 17px;
     color: black;
 }
 
+section:nth-child(3) ul:nth-child(3) li:hover span:first-of-type {
+    color: white;
+}
+
+/* Sectie 3: Onderste gedeelte: aantal punten */
 section:nth-child(3) ul:nth-child(3) li span:nth-child(3) {
     font-family: "Titillium Web";
     font-weight: 600;
@@ -415,12 +578,14 @@ section:nth-child(3) ul:nth-child(3) li span:nth-child(3) {
     right: 2em;
 }
 
+/* Sectie 3: Onderste gedeelte: Naam driver */
 section:nth-child(3) ul:nth-child(3) li p {
     margin: 0 10px;
     padding: 0 10px;
     border-left: 4px solid #00d2Be;
 }
 
+/* Sectie 3: Onderste gedeelte: Naam drivers en streep in kleur van team*/
 section:nth-child(3) ul:nth-child(3) li:nth-child(3) p {
     border-left: 4px solid #0600ef;
 }
@@ -453,6 +618,7 @@ section:nth-child(3) ul:nth-child(3) li:nth-child(10) p {
     border-left: 4px solid #FFF500;
 }
 
+/* Sectie 3: Onderste gedeelte: Button */
 section:nth-child(3) button {
     background: #e10600;
     box-shadow: none;
@@ -470,6 +636,7 @@ section:nth-child(3) button {
     margin-top: 1em;
 }
 
+/* Sectie 3: Onderste gedeelte: Button */
 section:nth-child(3) button:hover {
     box-shadow: 0 0 0 2px #e10600 inset;
     background: #fff;
@@ -477,16 +644,19 @@ section:nth-child(3) button:hover {
     transition: all .5s
 }
 
+/* Sectie 4: onder lijst met drivers -> Soort van 2e nieuwspagina*/
 section:nth-child(4) div {
     margin: 1em;
 }
 
+/* Sectie 4: onder lijst met drivers -> Soort van 2e nieuwspagina -> Artikelen*/
 section:nth-child(4) div article {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
+/* Sectie 4: onder lijst met drivers -> Soort van 2e nieuwspagina -> Artikelen -> Div om de inhoud heen */
 section:nth-child(4) div article div {
     position: absolute;
     margin: 20px 10px 10px 10px;
@@ -494,15 +664,16 @@ section:nth-child(4) div article div {
     border-top: solid 2px #fff;
     border-right: solid 2px #fff;
     border-top-right-radius: 10px;
-    background-image: url(/etc/designs/fom-website/images/patterns/white-stripe-x2.png);
-    background-size: 12px;
+    min-height: 13em;
 }
 
+/* Sectie 4: onder lijst met drivers -> Soort van 2e nieuwspagina -> Artikelen -> Div om de inhoud heen -> image op achtergrond */
 section:nth-child(4) div article img {
     border-radius: 10px;
     min-height: 165px;
 }
 
+/* Sectie 4: onder lijst met drivers -> Soort van 2e nieuwspagina -> Artikelen -> Div om de inhoud heen -> Titel */
 section:nth-child(4) div article div h3 {
     top: 20%;
     color: white;
@@ -512,6 +683,7 @@ section:nth-child(4) div article div h3 {
     letter-spacing: .2px;
 }
 
+/* Sectie 4: onder lijst met drivers -> Soort van 2e nieuwspagina -> Artikelen -> Div om de inhoud heen -> Button */
 section:nth-child(4) div article div button {
     background: #e10600;
     box-shadow: none;
@@ -526,8 +698,10 @@ section:nth-child(4) div article div button {
     letter-spacing: .5px;
     font-weight: 600;
     padding: 12px 35px 12px 15px;
+    margin-top: 2em;
 }
 
+/* Sectie 4: onder lijst met drivers -> Soort van 2e nieuwspagina -> Artikelen -> Div om de inhoud heen -> Button */
 section:nth-child(4) button:hover {
     box-shadow: 0 0 0 2px #e10600 inset;
     background: #fff;
@@ -535,6 +709,7 @@ section:nth-child(4) button:hover {
     transition: all .5s
 }
 
+/* Sectie 5: Laatste sectie met inhoud */
 section:nth-child(5) {
     font-family: "Formula1 Display-Bold", "Titillium Web";
     color: white;
@@ -544,8 +719,10 @@ section:nth-child(5) {
     padding-right: 10px;
     padding-top: 10px;
     min-height: 400px;
+    margin-top: 3em;
 }
 
+/* Sectie 5: Laatste sectie met inhoud -> Titel om fieldset */
 section:nth-child(5) legend {
     font-size: 20px;
     line-height: 24px;
@@ -554,6 +731,7 @@ section:nth-child(5) legend {
     left: 0;
 }
 
+/* Sectie 5: Laatste sectie met inhoud -> Fieldset om inhoud */
 section:nth-child(5) fieldset {
     border: 0;
     border-top: 10px solid black;
@@ -564,11 +742,12 @@ section:nth-child(5) fieldset {
     margin-bottom: 2em;
 }
 
+/* Sectie 5: Laatste sectie met inhoud -> Artikelen + artikel 1 */
 section:nth-child(5) article {
-    background-image: url(/images/70jaarf1.jpg);
+    background-image: url(../images/70jaarf1.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 185px;
     border-top-left-radius: 20px;
@@ -576,22 +755,35 @@ section:nth-child(5) article {
     position: relative;
 }
 
+section:nth-child(5) article:hover {
+    background-size: 120%;
+    transition: all 1s ease;
+}
+
+section:nth-child(5) article:hover p {
+    color: #e10600
+}
+
+/* Sectie 5: Laatste sectie met inhoud -> Artikel 2 met achtergrond */
 section:nth-child(5) article:nth-child(3) {
-    background-image: url(/images/coronavirus.jpg);
+    background-image: url(../images/coronavirus.jpg);
     margin-top: 1em;
 }
 
+/* Sectie 5: Laatste sectie met inhoud -> Artikel 3 met achtergrond */
 section:nth-child(5) article:nth-child(4) {
-    background-image: url(/images/drivermarket.jpg);
+    background-image: url(../images/drivermarket.jpg);
     margin-top: 1em;
 }
 
+/* Sectie 5: Laatste sectie met inhoud -> Artikel 4 met achtergrond */
 section:nth-child(5) article:nth-child(5) {
-    background-image: url(/images/esports.jpg);
+    background-image: url(../images/esports.jpg);
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
+/* Sectie 5: Laatste sectie met inhoud -> Artikelen: Donkere achtergrond */
 section:nth-child(5) article div {
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
@@ -602,20 +794,25 @@ section:nth-child(5) article div {
 
 section:nth-child(5) article img {}
 
-section:nth-child(5) article div img {
-    background-image: url(/images/white-stripe.png);
-    background-repeat: repeat-x;
+/* Sectie 5: Laatste sectie met inhoud -> Artikelen -> witte onderstreep */
+section:nth-child(5) article div span {
+    background-image: url(../images/white-stripe.png);
+    height: 12px;
+    width: 100%;
     position: absolute;
     bottom: 0;
-    height: 1em;
 }
 
-section:nth-child(6), .news-page section:nth-child(5) {
+/* Sectie 6: Download appstore en google play */
+section:nth-child(6),
+.news-page section:nth-child(5) {
     background-color: #38383f;
     border-bottom: 1px solid black;
 }
 
-section:nth-child(6) p, .news-page section:nth-child(5) p {
+/* Sectie 6: titel */
+section:nth-child(6) p,
+.news-page section:nth-child(5) p {
     margin: auto;
     color: white;
     text-transform: uppercase;
@@ -627,12 +824,16 @@ section:nth-child(6) p, .news-page section:nth-child(5) p {
     letter-spacing: .5px;
 }
 
-section:nth-child(6) div, .news-page section:nth-child(5) div {
+/* Sectie 6: download buttons */
+section:nth-child(6) div,
+.news-page section:nth-child(5) div {
     display: flex;
     justify-content: center;
 }
 
-section:nth-child(6) div img, .news-page section:nth-child(5) div img {
+/* Sectie 6: download buttons */
+section:nth-child(6) div img,
+.news-page section:nth-child(5) div img {
     width: 120px;
     height: 36px;
     margin-left: .5em;
@@ -642,6 +843,7 @@ section:nth-child(6) div img, .news-page section:nth-child(5) div img {
     border-radius: 0;
 }
 
+/* Footer */
 footer {
     background: #15151e;
     color: #fff;
@@ -663,7 +865,28 @@ footer ul li {
     font-size: 14px;
     line-height: 24px;
     padding: 4px 0;
+}
 
+footer ul li:hover {
+    border-bottom: 2px solid #e10600;
+    width: auto;
+}
+
+footer ul li span img {
+    width: 15px;
+    position: absolute;
+    right: 0;
+}
+
+footer ul li div {
+    display: none;
+}
+
+footer ul li div ul li {
+    font-family: "Titillium Web";
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 footer fieldset {
@@ -685,8 +908,8 @@ footer h2 {
     font-family: "Formula1 Display-Bold", "Titillium Web";
 }
 
-main.news-page {}
 
+/* Pagina 2: Titel */
 main.news-page h1 {
     font-family: "Formula1", "Titillium Web";
     font-size: 24px;
@@ -697,6 +920,7 @@ main.news-page h1 {
     margin-top: 4em;
 }
 
+/* Pagina 2: Geeft aan hoelang iets geleden is geplaastst */
 main.news-page span {
     font-family: "Titillium Web";
     font-size: 13px;
@@ -706,10 +930,12 @@ main.news-page span {
     color: #949498;
 }
 
+/* Pagina 2: Geeft volle breedte aan alle div */
 main.news-page div {
     width: 100%;
 }
 
+/* Pagina 2: Geeft rand om de bovenste img heen */
 main.news-page div img {
     border-top: solid 10px #e10600;
     border-right: solid 10px #e10600;
@@ -718,28 +944,43 @@ main.news-page div img {
     margin-top: 2em;
 }
 
+/* Pagina 2: opmaak van de tekst op de pagina */
 main.news-page p {
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom: 20px;
     letter-spacing: .2px;
-    font-weight: ;
 }
 
+/* Pagina 2: Inleidende alinea op de pagina */
 main.news-page strong {
     font-weight: bolder;
 }
 
+/* Pagina 2: Opmaak van de links op de pagina */
 main.news-page p a {
     color: #e10600;
 }
 
+/* Pagina 2: Geeft de links een onderstreep bij een hover */
+main.news-page p a:hover {
+    text-decoration: underline;
+}
+
+/* Pagina 2: Geeft onderstreep aan afbeeldingen */
 main.news-page article img {
     border-bottom: solid 10px #e10600;
     border-top-right-radius: 15px;
     width: 95%;
 }
 
+/* Pagina 2: Afbeelding sectie */
+figure {
+    width: 100%;
+    margin-left: -10px;
+}
+
+/* Pagina 2: Afbeelding sectie --> tekst eronder */
 figcaption {
     color: #949498;
     border-right: solid 2px #d0d0d2;
@@ -756,11 +997,13 @@ figcaption {
     margin-bottom: 30px;
 }
 
+/* Pagina 2: sectie 3: Tags van het bericht */
 main.news-page section:nth-child(3) {
     background: white;
     color: #e10600;
 }
 
+/* Pagina 2: sectie 3: onderstreep grijs */
 main.news-page section:nth-child(3) ul {
     background: white;
     border-right: solid 10px #d0d0d2;
@@ -771,6 +1014,7 @@ main.news-page section:nth-child(3) ul {
     padding-bottom: 10px;
 }
 
+/* Pagina 2: sectie 3: Tags van het bericht */
 main.news-page section:nth-child(3) ul li {
     box-shadow: 0 0 0 1px #e10600 inset;
     border-radius: 5px;
@@ -787,10 +1031,12 @@ main.news-page section:nth-child(3) ul li {
     text-align: center;
 }
 
+/* Pagina 2: sectie 3: Eerste tag van het bericht */
 main.news-page section:nth-child(3) ul li:first-child {
     border-bottom: 0px solid white;
 }
 
+/* Pagina 2: sectie 3: tweede tag van het bericht */
 main.news-page section:nth-child(3) ul li:nth-child(2) {
     padding: 10px;
     height: 40px;
@@ -798,6 +1044,7 @@ main.news-page section:nth-child(3) ul li:nth-child(2) {
     border-right: none;
 }
 
+/* Pagina 2: sectie 4: titel */
 main.news-page h2 {
     color: #000000;
     font-family: "Formula1 Display-Wide", "Titillium Web";
@@ -809,6 +1056,7 @@ main.news-page h2 {
     padding-left: 10px;
 }
 
+/* Pagina 2: sectie 4: artikelen */
 .news-page section:nth-child(4) article {
     display: flex;
     color: black;
@@ -817,11 +1065,25 @@ main.news-page h2 {
     border-bottom: solid 1px #d0d0d2;
 }
 
+/* Pagina 2: sectie 4: artikelen zwart bij hover */
+.news-page section:nth-child(4) article:hover {
+    background-color: #000000;
+    transition: .2s;
+}
+
+/* Pagina 2: sectie 4: artikelen witte tekst bij hover */
+.news-page section:nth-child(4) article:hover p {
+    color: #fff;
+    transition: .2s;
+}
+
+/* Pagina 2: sectie 4: artikelen tekst gedeelte */
 .news-page section:nth-child(4) article div {
     padding: 0 15px;
     margin: 0;
 }
 
+/* Pagina 2: sectie 4: artikelen img */
 .news-page section:nth-child(4) article img {
     width: 35%;
     height: 100%;
@@ -830,6 +1092,7 @@ main.news-page h2 {
     border-top-right-radius: 5px;
 }
 
+/* Pagina 2: sectie 4: artikelen --> rode kopje*/
 .news-page section:nth-child(4) article span {
     color: #e10600;
     font-size: 11px;
@@ -840,6 +1103,7 @@ main.news-page h2 {
     margin-bottom: 5px;
 }
 
+/* Pagina 2: sectie 4: artikelen --> tekst opmaak */
 .news-page section:nth-child(4) article p {
     font-size: 16px;
     line-height: 18px;
@@ -847,11 +1111,13 @@ main.news-page h2 {
     padding: 0;
 }
 
+/* Pagina 2: sectie 5 Google play en apple */
 .news-page section:nth-child(5) img {
     margin: 0;
 }
 
+/* Pagina 2: sectie 5 Google play en apple */
 .news-page section:nth-child(5) {
-    font-family: "Titillium Web" ;
+    font-family: "Titillium Web";
     min-height: 0;
 }

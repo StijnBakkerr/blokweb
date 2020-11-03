@@ -13,6 +13,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 5. https://www.w3schools.com/
 6. https://css-tricks.com/
 7. https://dlo.mijnhva.nl/d2l/le/content/192602/Home
+8. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
+9. https://stackoverflow.com/questions/11088938/is-this-the-best-way-to-make-the-body-max-width-and-centered
 
 
 
