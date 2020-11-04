@@ -16,7 +16,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 8. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar
 9. https://stackoverflow.com/questions/11088938/is-this-the-best-way-to-make-the-body-max-width-and-centered
 
+## Herkansing
 
+![Eindversie](images/eindversie-home.mov "eindversie-home")
+![Eindversie](images/eindversie-pagina-2.mov "eindversie-pagina-2")
 
 ## Eindgesprek (week 7/8)
 
@@ -33,8 +36,9 @@ Dit was lastig:
 
 **Screenshot(s):**
 
-![Voortgang 2](images/Voortgang2.jpg "Voortgang2")
+![Voortgang 2](images/voortgang2.jpg "voortgang2")
 ![Voortgang 3](images/voortgang3.jpg "voortgang 3")
+
 ## Voortgang 3 (week 6)
 
 Niet aanwezig geweest
@@ -46,7 +50,7 @@ Dit ging goed: Feedback verwerken Visuele details uitwerken.
 
 Dit ging minder goed: Lettertype dat gedownload is, niet in code gekregen.
 
-![Voortgang 2](images/Voortgang2.jpg "Voortgang2")
+![Voortgang 2](images/voortgang2.jpg "voortgang2")
 
 ### Agenda voor meeting
 
