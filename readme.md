@@ -21,18 +21,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ![Eindversie](images/eindversie-home.mov "eindversie-home")
 ![Eindversie](images/eindversie-pagina-2.mov "eindversie-pagina-2")
 
+Dit ging goed:
+* Maken van transities
+* Maken van interactie
+* Afwerking
+* Wc3 validator
+
+Dit was lastig:
+* 
+
+
 ## Eindgesprek (week 7/8)
 
 Dit ging goed:
-⋅⋅* Opmaak van de tweede pagina ben ik zeer tevreden mee
-⋅⋅* Styling van de homepage was erg uitdagend, erg trots dat ik zover ben gekomen
-⋅⋅* Selectoren gebruiken voor css
-⋅⋅* Hovers inzetten 
+* Opmaak van de tweede pagina ben ik zeer tevreden mee
+* Styling van de homepage was erg uitdagend, erg trots dat ik zover ben gekomen
+* Selectoren gebruiken voor css
+* Hovers inzetten 
 
 Dit was lastig:
-⋅⋅* css selector voor pagina 2
-⋅⋅* Precieze positionering bij schaling 
-⋅⋅* Af en toe heb ik een !important moeten gebruiken...
+* css selector voor pagina 2
+* Precieze positionering bij schaling 
+* Af en toe heb ik een !important moeten gebruiken...
 
 **Screenshot(s):**
 
@@ -56,18 +66,18 @@ Dit ging minder goed: Lettertype dat gedownload is, niet in code gekregen.
 
 #### Agendapunten:
 
-⋅⋅* Centreren van een element die nergens naar luistert
-⋅⋅* Filteren
-⋅⋅* Navigatie in de header
-⋅⋅* Grid
-⋅⋅* Afbeeldingen
+* Centreren van een element die nergens naar luistert
+* Filteren
+* Navigatie in de header
+* Grid
+* Afbeeldingen
 
 ### Verslag van meeting
 
-⋅⋅* Kijk naar hoe je een position absolute moet centeren
-⋅⋅* Schrijf je in voor je eindgesprek
-⋅⋅* 19 okt of 26 okt
-⋅⋅* Dag van te voren om 18:00 inleveren op DLO en Github
+* Kijk naar hoe je een position absolute moet centeren
+* Schrijf je in voor je eindgesprek
+* 19 okt of 26 okt
+* Dag van te voren om 18:00 inleveren op DLO en Github
 
 ## Voortgang 1 (week 3)
 
@@ -80,30 +90,30 @@ Dit ging minder goed: positioneren en het vinden van fouten en oplossen.
 **Screenshot(s):**
 
 ![voortgang 1](images/voortgang1.jpg "voortgangs moment 1")
-![Het centreren van het element is niet gelukt](images/button-niet-gecentreerd.png "mindergoed")
-![Het centreren van het element is niet gelukt](images/nietgecentreerd.png "mindergoed")
+![button-niet-gecentreerd](images/button-niet-gecentreerd.png "button-niet-gecentreerd")
+![nietgecentreerd](images/nietgecentreerd.png "nietgecentreerd")
 
 ### Agenda voor meeting
 
 #### Agendapunten:
 
-⋅⋅* Hoe kan je een border een bepaalde breedte meegeven?
-⋅⋅* flexbox buttons 
-⋅⋅* flex box
-⋅⋅* Button in section
-⋅⋅* Wat als jusify-content niet werkt?
-⋅⋅* instagram in je html
-⋅⋅* border-left niet doorlaten lopen
+* Hoe kan je een border een bepaalde breedte meegeven?
+* flexbox buttons 
+* flex box
+* Button in section
+* Wat als jusify-content niet werkt?
+* instagram in je html
+* border-left niet doorlaten lopen
 
 ### Verslag van meeting
 
-⋅⋅* Padding left 0px voor fieldset
-⋅⋅* Articles borderleftreadius selecteren
-⋅⋅* Klok padding div daarboven
-⋅⋅* List onderstreep padding-bottom
-⋅⋅* Hoe centreer je een absolute element
+* Padding left 0px voor fieldset
+* Articles borderleftreadius selecteren
+* Klok padding div daarboven
+* List onderstreep padding-bottom
+* Hoe centreer je een absolute element
 
-⋅⋅* https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+* https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
 
 
 
