@@ -18,8 +18,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Herkansing
 
-![Eindversie](images/eindversie-home.gif "eindversie-home")
-![Eindversie](images/eindversie-pagina-2.gif "eindversie-pagina-2")
+![Eindversie](images/hamburgermenu_eind.png "hamburgermenu_eind")
+![Eindversie](images/footer_eind.png "footer_eind")
 
 Dit ging goed:
 * Maken van transities
@@ -47,8 +47,9 @@ Dit was lastig:
 
 **Screenshot(s):**
 
-![V3](images/eindversie-home.gif "eindversie-home")
-![V3](images/eindversie-pagina-2.gif "eindversie-pagina-2")
+![Voortgang 2](images/voortgang2.jpg "voortgang2")
+![Voortgang 3](images/voortgang3.jpg "voortgang 3")
+
 ## Voortgang 3 (week 6)
 
 Niet aanwezig geweest
